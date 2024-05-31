@@ -57,7 +57,10 @@ class item():
 # This method should check if the provided value is a non-negative number before setting the _price attribute.
 # If the value is negative, it should raise a ValueError.
     def set_price(self, new_price):
-        if
+        if new_price < 0:
+            raise ValueError("price canot be negative
+                             ")
+        
 
 
 
