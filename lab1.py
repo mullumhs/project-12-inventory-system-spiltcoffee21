@@ -15,7 +15,7 @@ class Item():
     def __init__(self, name, price, quantity):
         self.set_name(name)
         self.set_price(price)
-        self.set_quantity( quantity)
+        self.set_quantity(quantity)
          
 
 
