@@ -21,19 +21,34 @@ class Inventory_Manager():
     def __init__(self,):
         self.item = []
     
-    def add_item (self, item):
+    def add_item (self, name, price, quantity):
         for existing_item in self.item:
             if existing_item.get_name() == item.get_item():
-                return false
+                print(f"{name}already added")               
+                return 
+        item = item(name, price, quantity) 
         self.item.append(item)
+        print(f"item added: {name}")
         return True
     
-    def remove_item():
+    
+    
+    
+    def remove_item(self):
         for i, existing_item in (self.item):
             if existing_item.get_name() == item.get_item():
-                
-        
-    def update_item():
+                del self.item[i]
+                return True
+        return False
+    
+    
+    
+    def update_item(self, price):
+        for existing_item in self.item:
+            if existing_item.get_ticket_id() == item:
+                existing_item.set_price(price)  # Update the price
+                return True
+        return False
                 
         
         
