@@ -45,18 +45,9 @@ class Inventory_Manager():
                 return True
         return False
 
+    def display(self):
+        for item in self.items:
+            print(f"item name: {item.get_name()}, price: ${item.get_price()}, quantity: {item.get_quantity()}")
 
 # Step 2: Create instances of the Item class and InventoryManager, then demonstrate their usage.
 # E.g. add items to the inventory, remove items, update items, and display the inventory.
-
-wepond_isle =Inventory_Manager()
-
-wepond_isle.add_Item("ak47", 307, 12)
-
-wepond_isle.add_Item("rpg", 12000, 34)
-
-wepond_isle.add_Item("Crucible blade", 100000000000, 2)
-
-wepond_isle.add_Item("Remy", 10, 3)
-
-wepond_isle.add_Item("drakes glizzy", 69, 13)
